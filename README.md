@@ -1,4 +1,4 @@
 # banana
 test banana wpt
 
-test github action
+test github action pull request

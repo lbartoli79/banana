@@ -23,5 +23,4 @@ jobs:
           apiKey: ${{ secrets.WPT_API_KEY }}
           urls: |
             https://example.com/
-            https://example.com/about
           label: "GitHub Action Test"

@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: WebPageTest
-        uses: catchpoint/WebPageTest.github-action@test_lb
+        uses: catchpoint/WebPageTest.github-action@main
         with:
           apiKey: ${{ secrets.WPT_API_KEY }}
           urls: |

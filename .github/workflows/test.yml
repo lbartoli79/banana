@@ -5,9 +5,9 @@ name: TEST
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   build:
@@ -16,12 +16,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        
+
       - name: WebPageTest
-        uses: catchpoint/WebPageTest.github-action@update_packages
+        uses: catchpoint/WebPageTest.github-action@test_lb
         with:
           apiKey: ${{ secrets.WPT_API_KEY }}
           urls: |
             https://example.com/
             https://example.com/about
-          label: 'GitHub Action Test'
+          label: "GitHub Action Test"
